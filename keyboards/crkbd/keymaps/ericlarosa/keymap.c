@@ -3,6 +3,7 @@
 // ALIASES
 #define E_LSA_TAB LSA_T(KC_TAB)
 #define E_LT4_ESC LT(4, KC_ESC)
+#define E_LT4_ENT LT(4, KC_ENT)
 #define E_C_COL LCTL_T(KC_SCOLON)
 #define E_S_QUO LSFT_T(KC_QUOTE)
 #define E_GUI1 LGUI(KC_1)
@@ -21,7 +22,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
         KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, E_S_QUO,
     //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                            KC_LGUI,   MO(1),  KC_SPC,  E_LT4_ESC,   MO(2), KC_RALT
+                                            KC_LGUI,   MO(1),  KC_SPC,  E_LT4_ENT,   MO(2), KC_RALT
                                         //`--------------------------'  `--------------------------'
   ),
   [1] = LAYOUT_split_3x6_3(
@@ -32,7 +33,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
         KC_LSFT,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
     //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                            KC_LGUI, KC_TRNS,  KC_SPC,  E_LT4_ESC,   MO(3), KC_RALT
+                                            KC_LGUI, KC_TRNS,  KC_SPC,  E_LT4_ENT,   MO(3), KC_RALT
                                         //`--------------------------'  `--------------------------'
   ),
   [2] = LAYOUT_split_3x6_3(
@@ -43,7 +44,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
         KC_LSFT,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
     //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                            KC_LGUI,   MO(3),  KC_SPC,  E_LT4_ESC, KC_TRNS, KC_RALT
+                                            KC_LGUI,   MO(3),  KC_SPC,  E_LT4_ENT, KC_TRNS, KC_RALT
                                         //`--------------------------'  `--------------------------'
   ),
   [3] = LAYOUT_split_3x6_3(
@@ -54,7 +55,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
         RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD,   KC_NO,   KC_NO,                        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
     //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                            KC_LGUI, KC_TRNS,  KC_SPC,  E_LT4_ESC,  KC_TRNS, KC_RALT
+                                            KC_LGUI, KC_TRNS,  KC_SPC,  E_LT4_ENT,  KC_TRNS, KC_RALT
                                         //`--------------------------'  `--------------------------'
   ),
   [4] = LAYOUT_split_3x6_3(
@@ -65,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
           KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
     //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                            KC_LGUI,   KC_NO,   KC_NO,  E_LT4_ESC,   KC_NO,   KC_NO
+                                            KC_LGUI,   KC_NO,   KC_NO,  E_LT4_ENT,   KC_NO,   KC_NO
                                         //`--------------------------'  `--------------------------'
   )
 };
